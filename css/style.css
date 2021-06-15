@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+  display: flex;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  
+}
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.logo img{
+    border:3px solid white;
+    border-radius: 50px;
+}
+.nav-list{
+    width:75%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+ 
+    
+  }
+.nav-list li{
+    list-style: none;
+    padding: 24px 28px;
+
+
+}
+ a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.rightNav{
+    padding: 12px;
+    text-align: right;
+    width: 25%;
+   align-items: center;
+   
+}
+#search{
+    padding: 5px 3px;
+    font-size: 17px;
+    border: 2px solid ;
+    border-radius: 9px ;
+ 
+}
+.background{
+    background: rgba(20, 40,20, 0.7) url('../img/6.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   max-width: 50%;
+   margin: auto;
+   height: 60%;
+   text-align: center;
+}
+.firstsection{
+    height: 100vh;
+   
+}
+.secondHalf img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 60px;
+    display: block;
+    margin: auto;
+}
+.firstHalf{
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.secondHalf{
+ width: 30%;
+}
+.text-big{
+    font-size: 35px;
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 4px 4px;
+    margin: 5px 2px;
+    border: 2px solid white;
+    border-radius: 10px ;
+    background: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-sm{
+    padding: 6px 8px;
+}
+.sectionRight{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width:80%;
+        margin:auto;
+        padding: 20px;
+        
+       
+}
+.paras{
+    padding:0px 30px;
+    
+}
+.sectionLeft{
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width:80%;
+    margin:auto;
+   
+   
+}
+.sectionRight .paras{
+    border-Right:2px solid green;
+}
+.sectionLeft .paras{
+    border-left:2px solid green;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    
+    border-radius: 10px;
+    margin: 30px;
+    scrollbar-shadow-color: rgb(127, 184, 70);
+ 
+}
+.contact-us{
+    background-color: rgb(224, 213, 213);
+    padding: 30px 20px;
+    font-size: 20px;
+}
+.contact-us form{
+    
+    width: 400px;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    
+}
+.contact-us,form{
+   padding: 10px;
+   margin-top: 30px 0px ;
+}
+#email,#name{
+    width: 360px;
+    margin: 10px 0px;
+    padding: 4px 0px;
+}
+
+#comments{
+    height: 80px;
+    width: 360px;
+    margin: 10px 0px;
+    padding: 4px 0px;
+}
+.submit{
+    padding: 4px 10px;
+    margin-left: 155px;
+    border: 2px solid black;
+    border-radius: 10px ;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.submit:hover{
+    background: black;
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background:rgba(10, 10,10, 0.5);
+}
+.top{
+    position: absolute;
+    right: 0px;
+}
+a:hover{
+   color: blue;
+}
+a:active{
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+ 
+}
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 3px;
+}
+
+@media only screen and (max-width: 1250px){
+    .nav-list{
+        flex-direction: column;
+        
+    }
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        transition: all 0.5s ease-out;
+        
+    }
+    #search{
+        width: 90%;
+        margin: 4px;
+    }
+    .rightNav{
+        flex-direction: column;
+      text-align: center;
+      
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 70px;
+    }
+    .visibility{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        text-align: justify;
+    
+    }
+    .sectionRight{
+        flex-direction: column-reverse;
+    }
+    .sectionLeft{
+        flex-direction: column-reverse;
+    }
+    .paras{
+        padding: 10px 10px;
+    }
+    
+}
